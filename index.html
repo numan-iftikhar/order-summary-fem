@@ -23,10 +23,8 @@
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
-      body{
-        background-image: url(images/pattern-background-desktop.svg);
-        background-repeat: no-repeat;
-        background-position: cover;
+      body {
+        background: url(images/pattern-background-desktop.svg) no-repeat;
         background-color: hsl(225, 100%, 94%);
       }
     </style>
@@ -41,6 +39,7 @@
               veryPaleBlue: "hsl(225, 100%, 98%)",
               desaturatedBlue: "hsl(224, 23%, 55%)",
               darkBlue: "hsl(223, 47%, 23%)",
+              hoverColor: "hsl(245, 83%, 68%)",
             },
           },
         },
@@ -48,47 +47,61 @@
     </script>
   </head>
 
-
   <body class="flex flex-col items-center justify-center h-screen">
-
     <main class="w-96 pb-6 bg-white rounded-2xl text-center">
       <!-- hero image -->
-      <div class="image ">
-        <img class="rounded-t-2xl" src="images/illustration-hero.svg" alt="illustration-hero">
+      <div class="image">
+        <img
+          class="rounded-t-2xl"
+          src="images/illustration-hero.svg"
+          alt="illustration-hero"
+        />
       </div>
 
       <!-- order summary -->
       <div class="px-8 py-3">
         <h1 class="text-2xl font-bold my-3">Order Summary</h1>
         <p class="text-desaturatedBlue">
-          You can now listen to millions of songs, audiobooks, and
-          podcasts on any device anywhere you like!
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
         </p>
       </div>
 
       <!-- annual plan -->
       <div class="mx-8 flex bg-veryPaleBlue rounded-lg mb-6 p-4 items-center">
-        <img class="mr-4" src="images/icon-music.svg" alt="icon-music">
+        <img class="mr-4" src="images/icon-music.svg" alt="icon-music" />
         <div class="">
           <h2 class="font-bold">Annual Plan</h2>
           <p class="text-desaturatedBlue font-medium text-left">$59.99/year</p>
         </div>
-        <a class="ml-auto text-sm text-brightBlue underline font-bold hover:text-purple-600 hover:no-underline" href="#">Change</a>
+        <a
+          class="ml-auto text-sm text-brightBlue underline font-bold hover:text-hoverColor hover:no-underline"
+          href="#"
+          >Change</a
+        >
       </div>
 
-      <div class="mx-8">
-        <button class="blockBtn w-full bg-brightBlue py-2 px-4 text-white font-medium rounded-lg hover:bg-purple-600">Proceed to Payment</button>
-
-      </div>
-      <button class="btnCancel mt-5 text-sm text-desaturatedBlue font-bold hover:text-black">Cancel Order</button>
+      <!-- navigation -->
+      <nav>
+        <a
+          class="bg-brightBlue block mx-6 py-2.5 mb-5 text-white font-medium rounded-lg shadow-lg hover:bg-hoverColor cursor-pointer"
+          >Proceed to Payment</a
+        >
+        <a
+          class="text-sm text-desaturatedBlue font-bold hover:text-slate-600 cursor-pointer"
+          >Cancel Order</a
+        >
+      </nav>
     </main>
-
 
     <div class="attribution absolute bottom-0 mb-1">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="https://www.frontendmentor.io/profile/numan-iftikhar">Numan Iftikhar</a>.
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/numan-iftikhar"
+        >Numan Iftikhar</a
+      >.
     </div>
   </body>
 </html>
